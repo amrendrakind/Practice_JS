@@ -26,3 +26,5 @@ testObject["add"]="Amchi Mumbai"
 atomValue = testObject["add"]
 console.log(atomValue);
 console.log(testObject)
+delete testObject.add
+console.log(testObject)
