@@ -1,8 +1,8 @@
 var testObject={
     "an atom" : "Amrendra K",
-    // "an atom" : "Amrendra",
-    // "an atom" : "Amrendr",
-    // "an atom" : "Amrend",
+    "an atom" : "Amrendra",
+    "an atom" : "Amrendr",
+    "an atom" : "Amrend",
     "my side" : "Nilesh",
     "My drink" : "Water"
 }
