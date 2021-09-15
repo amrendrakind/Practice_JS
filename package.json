@@ -1,0 +1,24 @@
+{
+  "name": "practice_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrendrakind/Practice_JS.git"
+  },
+  "author": "Amrendra K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amrendrakind/Practice_JS/issues"
+  },
+  "homepage": "https://amrendrakind.github.io/"
+}
