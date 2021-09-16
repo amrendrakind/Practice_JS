@@ -16,11 +16,13 @@ for (let i=0;i<(a.length+b.length);i++){
 }
 console.log("Resulting Array is ",c) 
 
-
 const newArr = [];
 for(let i = 0; i < a.length; i++) { 
   newArr.push(a[i]);
   newArr.push(b[i]);
 }
 console.log(newArr)
+
+var myVar= "Hi!"
+console.log(myVar.valueOf())
 
