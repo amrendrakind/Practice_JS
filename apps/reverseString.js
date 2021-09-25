@@ -1,3 +1,6 @@
+//Desired input -  "this is a thin table"
+ //Desired output - "siht si a niht elbat"
+
 function reverse(str,t){
     str=str.split(" ")
     let reverseSentence=""
