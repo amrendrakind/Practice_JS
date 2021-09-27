@@ -34,3 +34,68 @@ function displayEvenNumbers(numbers){
 }
 console.log("Even Numbers are: ",displayEvenNumbers(numbers))
 //-----------------Return nth odd number
+
+function displayNthOddNumbers(numbers,nth){
+    let counter=0,oddNum=0
+    for(let num of numbers){
+        if(num%2===1 && counter<nth){
+            counter++
+            if(counter===nth){
+                oddNum=num
+                break
+            }
+        }
+    }
+    return oddNum
+}
+console.log(displayNthOddNumbers(numbers,2))
+
+//-----------------Return nth Even number
+
+function displayNthEvenNumbers(numbers,nth){
+    let counter=0,evenNum=0
+    for(let num of numbers){
+        if(num%2===0 && counter<nth){
+            counter++
+            if(counter===nth){
+                evenNum=num
+                break
+            }
+        }
+    }
+    return evenNum
+}
+console.log(displayNthEvenNumbers(numbers,4))
+// First Half
+
+function firstHalf(numbers){
+    let firstHalf=[]
+    for(let num of numbers){
+        if (num<=numbers.length/2)
+            firstHalf.push(num)
+        else break
+    }
+    return firstHalf
+}
+console.log(firstHalf(numbers))
+
+// Second Half
+
+function secondHalf(numbers){
+    let secondHalf=[]
+    for(let num of numbers){
+        if (num<=numbers.length/2)
+            secondHalf.push(numbers.length/2+num)
+        else break
+    }
+    return secondHalf
+}
+console.log(secondHalf(numbers))
+
+
+
+
+
+
+
+
