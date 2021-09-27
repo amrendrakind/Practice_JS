@@ -34,27 +34,3 @@ function displayEvenNumbers(numbers){
 }
 console.log("Even Numbers are: ",displayEvenNumbers(numbers))
 //-----------------Return nth odd number
-
-function displayNthOddNumbers(numbers){
-    let numOdd=[]
-    for(let num of numbers){
-        if(num%2===1){
-            numOdd.push(num)
-        }
-    }
-    return numOdd
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
