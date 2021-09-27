@@ -13,3 +13,4 @@ console.log(arr2);
 console.log(arr2.indexOf(32));
 let combinedArray = arr.concat(arr2)
 console.log(combinedArray)
+//----------------------Part1 Over-------------
