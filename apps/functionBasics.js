@@ -9,7 +9,7 @@ function randomFood(){
 console.log(randomFood())
 
 //Write a function called displayOddNumbers which iterates over the numbers array and console.logs out all of the numbers that are odd
-let numbers=[1,2,3,4,5,6,7,8,9,10]
+let numbers=[11,12,13,14,15,16,17,18,19,20]
 function displayOddNumbers(numbers){
     let numOdd=[]
     for(let num of numbers){
@@ -69,10 +69,10 @@ console.log(displayNthEvenNumbers(numbers,4))
 // First Half
 
 function firstHalf(numbers){
-    let firstHalf=[]
-    for(let num of numbers){
-        if (num<=numbers.length/2)
-            firstHalf.push(num)
+    let firstHalf=[],half=numbers.length/2
+    for(let num in numbers){
+        if (num<half)
+            firstHalf.push(numbers[num])
         else break
     }
     return firstHalf
@@ -82,20 +82,12 @@ console.log(firstHalf(numbers))
 // Second Half
 
 function secondHalf(numbers){
-    let secondHalf=[]
-    for(let num of numbers){
-        if (num<=numbers.length/2)
-            secondHalf.push(numbers.length/2+num)
+    let secondHalf=[], half=Math.ceil(numbers.length/2)
+    for(let num in numbers){
+        if (num<half)
+            secondHalf.push(numbers[half+parseInt(num)])
         else break
     }
     return secondHalf
 }
 console.log(secondHalf(numbers))
-
-
-
-
-
-
-
-
