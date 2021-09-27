@@ -69,25 +69,13 @@ console.log(displayNthEvenNumbers(numbers,4))
 // First Half
 
 function firstHalf(numbers){
-    let firstHalf=[],half=numbers.length/2
-    for(let num in numbers){
-        if (num<half)
-            firstHalf.push(numbers[num])
-        else break
-    }
-    return firstHalf
+    return numbers.slice(0,numbers.length/2);
 }
 console.log(firstHalf(numbers))
 
 // Second Half
 
 function secondHalf(numbers){
-    let secondHalf=[], half=Math.ceil(numbers.length/2)
-    for(let num in numbers){
-        if (num<half)
-            secondHalf.push(numbers[half+parseInt(num)])
-        else break
-    }
-    return secondHalf
+    return numbers.slice(numbers.length/2);
 }
 console.log(secondHalf(numbers))
