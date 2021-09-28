@@ -97,3 +97,18 @@ function countEvensAndOdds(number){
     return objEvenOdd
 }
 console.log(countEvensAndOdds(numArray))
+//Write a function called onlyCapitalLetters which accepts a string and returns a new string with only the capital letters passed to the string.
+
+function onlyCapitalLetters(str){
+    let newStr=''
+    for(let i in str){
+        if(str[i].charCodeAt(0)<91 && str[i].charCodeAt(0)>64){
+            newStr+=str[i]
+        }
+    }
+    console.log(newStr)
+    return newStr
+}
+console.log(onlyCapitalLetters("It is "))
+console.log(onlyCapitalLetters("Amazing"))
+console.log(onlyCapitalLetters("But nothing"))
