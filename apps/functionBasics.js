@@ -106,9 +106,8 @@ function onlyCapitalLetters(str){
             newStr+=str[i]
         }
     }
-    console.log(newStr)
     return newStr
 }
-console.log(onlyCapitalLetters("It is "))
-console.log(onlyCapitalLetters("Amazing"))
-console.log(onlyCapitalLetters("But nothing"))
+console.log(onlyCapitalLetters("It is Awesome "))
+console.log(onlyCapitalLetters("and amazing too"))
+console.log(onlyCapitalLetters("BUT NOTHING"))
