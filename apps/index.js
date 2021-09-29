@@ -161,6 +161,36 @@ console.log(arrayManipulation([1,2,3], "add", "beginning", 20)) // [20,1,2,3]
 console.log(arrayManipulation([1,2,3], "add", "end", 30)) // [1,2,3,30]
 
 
+//isPalindrome :  Palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. This function should take in one parameter and returns true or false if it is a palindrome. As a bonus, allow your function to ignore whitespace and capitalization so that isPalindrome('a man a plan a canal Panama'); returns true
+console.log("\nFunction isPalindrome")
+function isPalindrome(str){
+    str=str.toUpperCase()
+    let len=str.length-1
+    // console.log(len)
+    let isPal=false
+    for(let i=0;i<len/2;i++){
+        // console.log(i)
+        // console.log(str[i],str[len-i])
+        if(str[i]===str[len-i]){
+            isPal=true
+        }
+        else {
+            isPal=false
+            break
+        }
+    }
+    return isPal
+}
+
+console.log('testing',isPalindrome('testing')) // false
+console.log('tacoCat',isPalindrome('tacoCat')) // true
+console.log('hannah', isPalindrome('hannah')) // true
+console.log('robert', isPalindrome('robert')) // false
+
+
+
+
+
 
 
 
