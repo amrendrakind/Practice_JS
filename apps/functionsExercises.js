@@ -68,6 +68,19 @@ console.log(numberCompare(1,1)) // "Numbers are equal"
 console.log(numberCompare(2,1)) // "First is greater"
 console.log(numberCompare(1,2)) // "Second is greater"
 
+//singleLetterCount : this function takes in two parameters (two strings). The first parameter should be a word and the second should be a letter. The function returns the number of times that letter appears in the word. The function should be case insensitive (does not matter if the input is lowercase or uppercase). If the letter is not found in the word, the function should return 0.
 
+function singleLetterCount(word, letter){
+    let countLetter=0
+    for(let i in word){
+        if(word[i].toUpperCase()===letter.toUpperCase()){
+            countLetter++;
+        }
+    }
+    return countLetter
+}
+
+console.log(singleLetterCount('amazing','A')) // 2
+console.log(singleLetterCount('SelfLearning Model','l')) // 3
 
 
