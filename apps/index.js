@@ -362,8 +362,18 @@ console.log('tacoCat',isPalindrome('tacoCat')) // true
 console.log('hannah', isPalindrome('hannah')) // true
 console.log('robert', isPalindrome('robert')) // false
 
-//
-
+//Another Method 
+console.log("\nAnother method for is palindrome")
+function isPalindrome2(str){
+    return str.toLowerCase().split('').reverse().join('') === str.toLowerCase();
+  
+  }
+  
+  console.log('testing',isPalindrome2('testing')) // false
+  console.log('tacoCat',isPalindrome2('tacoCat')) // true
+  console.log('hannah', isPalindrome2('hannah')) // true
+  console.log('robert', isPalindrome2('robert')) // false
+  
 
 
 
