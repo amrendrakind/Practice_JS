@@ -87,7 +87,6 @@ console.log(singleLetterCount('SelfLearning Model','l')) // 3
 
 function multipleLetterCount(str){
     let objLetterCount={}, newKey=true
-//    objLetterCount[str[0]]=0
     for(let i =0;i<str.length;i++){
         for(let key in objLetterCount){
             if(str[i]===key){
@@ -109,6 +108,24 @@ function multipleLetterCount(str){
 }
 console.log(multipleLetterCount("hello")) // {h:1, e: 1, l: 2, o:1}
 console.log(multipleLetterCount("person")) // {p:1, e: 1, r: 1, s:1, o:1, n:1}
+
+//Another Mothod
+console.log("\nAnother method for Multiple Letter count")
+function multipleLetterCounts(str){
+    let objLetterCount={}
+    for(let i =0;i<str.length;i++){
+        if(!(str[i] in objLetterCount)){
+            objLetterCount[str[i]]=1
+        }else{
+            objLetterCount[str[i]]++
+        }
+    }
+    return objLetterCount
+}
+console.log(multipleLetterCounts("hello")) // {h:1, e: 1, l: 2, o:1}
+console.log(multipleLetterCounts("person")) // {p:1, e: 1, r: 1, s:1, o:1, n:1}
+
+
 
 ////arrayManipulation : 
 //This function should take in at most four parameters (an array, command, location, and value).
@@ -348,7 +365,7 @@ console.log('tacoCat',isPalindrome('tacoCat')) // true
 console.log('hannah', isPalindrome('hannah')) // true
 console.log('robert', isPalindrome('robert')) // false
 
-
+//
 
 
 
