@@ -49,3 +49,11 @@ console.log(printDay(3))    //Tuesday
 console.log(printDay(5))    //THursday
 console.log(printDay(7))    //Saturday
 console.log(printDay(41))   //undefined
+
+//lastElement : this function takes in one parameter (an array) and returns the last value in the array. It should return undefined if the array is empty.
+
+function lastElement(arr){
+    return arr.length?arr[arr.length-1]:"undefined"
+}
+console.log(lastElement([1,2,3,4,5])) //5
+console.log(lastElement([])) //undefined
