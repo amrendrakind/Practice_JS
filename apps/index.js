@@ -344,11 +344,8 @@ console.log("\nFunction isPalindrome")
 function isPalindrome(str){
     str=str.toUpperCase()
     let len=str.length-1
-    // console.log(len)
     let isPal=false
     for(let i=0;i<len/2;i++){
-        // console.log(i)
-        // console.log(str[i],str[len-i])
         if(str[i]===str[len-i]){
             isPal=true
         }
