@@ -83,4 +83,33 @@ function singleLetterCount(word, letter){
 console.log(singleLetterCount('amazing','A')) // 2
 console.log(singleLetterCount('SelfLearning Model','l')) // 3
 
+//multipleLetterCount : this function takes in one parameter (a string) and returns an object with the keys being the letters and the values being the count of the letter.
+
+function multipleLetterCount(str){
+    let objLetterCount={}, newKey=true
+//    objLetterCount[str[0]]=0
+    for(let i =0;i<str.length;i++){
+        for(let key in objLetterCount){
+            if(str[i]===key){
+                newKey=false
+            }
+        }
+        if(newKey){
+            objLetterCount[str[i]]=0
+            newKey=true
+        }
+        for (let key in objLetterCount) {
+            if(str[i]===key){
+                objLetterCount[key]++
+                newKey=true
+            }
+        }
+    }
+    return objLetterCount
+}
+console.log(multipleLetterCount("hello")) // {h:1, e: 1, l: 2, o:1}
+console.log(multipleLetterCount("person")) // {p:1, e: 1, r: 1, s:1, o:1, n:1}
+
+
+
 
