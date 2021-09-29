@@ -57,3 +57,17 @@ function lastElement(arr){
 }
 console.log(lastElement([1,2,3,4,5])) //5
 console.log(lastElement([])) //undefined
+
+//numberCompare : this function takes in two parameters (both numbers). If the first is greater than the second, this function returns "First is greater". If the second number is greater than the first, the function returns "Second is greater". Otherwise the function returns "Numbers are equal"
+
+function numberCompare(a,b){
+    return a>b?"First is greater":(a===b?"Numbers are equal":"Second is greater")
+}
+
+console.log(numberCompare(1,1)) // "Numbers are equal"
+console.log(numberCompare(2,1)) // "First is greater"
+console.log(numberCompare(1,2)) // "Second is greater"
+
+
+
+
