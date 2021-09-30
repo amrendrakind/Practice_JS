@@ -18,7 +18,7 @@ function lastIndexOf(arr,num){
     let len=arr.length
     for(let index in arr){
         if(arr[len-index]===num){
-            return Number(len-index)
+            return (len-index)
         }
     }
     return -1
