@@ -21,7 +21,3 @@ console.log(instructorData.additionalData.favoriteHobbies[2])
 console.log(instructorData.additionalData.moreDetails.favoriteBasketballTeam)
 console.log(instructorData.additionalData.moreDetails.hometown.state)
 console.log(instructorData.additionalData.moreDetails.citiesLivedIn[1])
-
-
-
-
