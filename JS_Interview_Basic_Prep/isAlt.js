@@ -9,7 +9,6 @@ isAlt("amazon") // true
 isAlt("apple") // false
 isAlt("banana") // true
 */
-
 //Answer
 function isAlt(arr){
     let isAltnate=false
