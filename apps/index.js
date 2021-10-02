@@ -41,8 +41,17 @@ displayHometownData();
 function addDetails(key,value){
    let addObject=instructorData.additionalData.moreDetails;
    addObject[key]=value
-   console.log(addObject)
+   return addObject
 }
-addDetails("isHilarious", true)
-addDetails("previousApartments", ["Mission", "North Beach", "Nob Hill"])
+console.log(addDetails("isHilarious", true))
+console.log(addDetails("previousApartments", ["Mission", "North Beach", "Nob Hill"]))
 //-------------------------
+function removeDetail(key){
+    let removeObject=instructorData.additionalData.moreDetails
+    delete removeObject[key]
+    return removeObject
+}
+console.log(removeDetail('citiesLivedIn'))
+console.log(removeDetail('hometown'))
+console.log(removeDetail('favoriteBasketballTeam'))
+
