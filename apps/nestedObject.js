@@ -38,5 +38,11 @@ function displayHometownData(){
 }
 displayHometownData();
 //---------------------
-
-
+function addDetails(key,value){
+   let addObject=instructorData.additionalData.moreDetails;
+   addObject[key]=value
+   console.log(addObject)
+}
+addDetails("isHilarious", true)
+addDetails("previousApartments", ["Mission", "North Beach", "Nob Hill"])
+//-------------------------
