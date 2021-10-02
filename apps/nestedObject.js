@@ -21,3 +21,22 @@ console.log(instructorData.additionalData.favoriteHobbies[2])
 console.log(instructorData.additionalData.moreDetails.favoriteBasketballTeam)
 console.log(instructorData.additionalData.moreDetails.hometown.state)
 console.log(instructorData.additionalData.moreDetails.citiesLivedIn[1])
+
+function displayCities(){
+    let cityArray = instructorData.additionalData.moreDetails.citiesLivedIn;
+    for(let key in cityArray){
+        console.log(cityArray[key]);
+    }
+}
+displayCities()
+//-----------------
+function displayHometownData(){
+    let homeData = instructorData.additionalData.moreDetails.hometown
+    for(let key in homeData){
+        console.log(homeData[key])
+    }
+}
+displayHometownData();
+//---------------------
+
+
