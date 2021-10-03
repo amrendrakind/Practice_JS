@@ -60,15 +60,17 @@ let nestedArr4 = [
 console.log(nestedArr4)
 //--------------countVowels--------------
 function countVowels(nestedArray){
-  let evenArray=[]
-  for(let arrayElement of nestedArray){
-    for(let element of arrayElement){
-      console.log(element)
-      }
+  let str = nestedArray.toString()
+  let count=0
+  let vowels ="aeiouAEIOU"
+  for(let char of str){
+    if(vowels.includes(char)){
+      count++
     }
-  return evenArray
+  }
+  return count
 }
-console.log(countVowels(nestedArr4))
+console.log("No of vowels are "+countVowels(nestedArr4))
 
 
 
