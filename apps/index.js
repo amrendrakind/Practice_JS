@@ -50,4 +50,26 @@ function sumTotal(nestedArray){
   return sumOfElements
 }
 console.log(sumTotal(nestedArr2))
+console.log("-------------Counting Vovels in Nested Array----------------")
+let nestedArr4 = [
+  "Elie",
+  ["Matt", ["Tim"]],
+  ["Colt", ["Whiskey", ["Janey"], "Tom"]],
+  "Lorien"
+]
+console.log(nestedArr4)
+//--------------countVowels--------------
+function countVowels(nestedArray){
+  let evenArray=[]
+  for(let arrayElement of nestedArray){
+    for(let element of arrayElement){
+      console.log(element)
+      }
+    }
+  return evenArray
+}
+console.log(countVowels(nestedArr4))
+
+
+
 
