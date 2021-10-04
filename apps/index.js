@@ -85,7 +85,26 @@ function rotateArray(arr,num){
 console.log(rotateArray([1,2,3],1))
 console.log(rotateArray([1,2,3],2))
 console.log(rotateArray([1,2,3],3))
+//----------Print XO and XO Grid-----------------
+//Write a function called makeXOGrid which takes in two parameters, rows and columns, and returns an array of arrays with the number of values in each subarray equal to the columns parameter and the number of subarrays equal to the rows parameter. The values in the sub-arrays should switch between "X" and "O".
 
+function makeXOGrid(row, column){
+  let gridArray=[]
+  for(let r=0;r<row;r++){
+    let tempArray = []
+    for(let c=0;c<column;c++){
+      if(c%2===0){
+        tempArray.push("X")
+      }
+      else tempArray.push("O")
+    }
+  gridArray.push(tempArray)
+  }
+  return gridArray
+}
 
+console.log(makeXOGrid(1,4))
+console.log(makeXOGrid(3,2))
+console.log(makeXOGrid(3,3))
 
 
