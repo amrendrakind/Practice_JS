@@ -71,6 +71,20 @@ function countVowels(nestedArray){
   return count
 }
 console.log("No of vowels are "+countVowels(nestedArr4))
+//---------Rotate Array-------------
+//Write a function called rotate which takes an array and a number, and moves each element however many spaces the number is to the right. For the value at the end of the array, rotate should move it back to the beginning.console
+console.log("-------------Array Rotation----------------")
+
+function rotateArray(arr,num){
+  var amount = num % arr.length;
+  for(var i=0; i< amount; i++){
+    arr.unshift(arr.pop());
+  }
+  return arr;
+}
+console.log(rotateArray([1,2,3],1))
+console.log(rotateArray([1,2,3],2))
+console.log(rotateArray([1,2,3],3))
 
 
 
