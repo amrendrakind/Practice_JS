@@ -36,3 +36,23 @@ function map(arr,fn){
     return tempArr
 }
 console.log(map([6,7,8,9,10],function (val){return val*2}))
+
+//---------------Reject Function--------------
+function reject(arr,fn){
+  let tempArr=[]
+  for(let i =0; i<arr.length;i++){
+    if(!fn(arr[i])){
+     tempArr.push((arr[i]))
+    }
+  }
+  return tempArr
+}
+
+console.log(reject([1,2,3,4], function(val){
+  return val > 2;
+})); // [1,2]
+
+console.log(reject([2,3,4,5], function(val){
+  return val % 2 === 0;
+})); // [3,5]
+
