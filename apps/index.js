@@ -88,3 +88,17 @@ let instructorModuleRefactored = (function createInstructors(){
 console.log(instructorModuleRefactored.showInstructors())
 instructorModuleRefactored.addInstructor("Shally")
 console.log(instructorModuleRefactored.showInstructors())
+
+///-----------arguments--------------
+
+function logAll(){
+  console.log(arguments)
+}
+logAll(2,3,4)
+logAll(5,6)
+function displayFirstArguments(){
+  return arguments[0]
+}
+console.log(displayFirstArguments(1,2,3))
+console.log(displayFirstArguments(true))
+console.log(displayFirstArguments())
