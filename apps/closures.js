@@ -27,4 +27,5 @@ function outer(a){
   let ageGrowByOne = defineAge();
   console.log("Now age is",ageGrowByOne()) // 29
   console.log("Now age is",ageGrowByOne()) // 30
-  
+  console.log("Now age is",ageGrowByOne()) // 31
+  console.log("Now age is",ageGrowByOne()) // 32
