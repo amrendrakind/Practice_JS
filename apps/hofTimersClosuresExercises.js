@@ -56,6 +56,20 @@ function isPrime(num){
 console.log("It is prime "+isPrime(8))
 console.log("It is prime "+isPrime(17))
 
+//numberFact
+//Write a function called numberFact which takes in a number and a callback and returns the result of the callback with the number passed to it
+
+function numberFact(num,fn){
+  return fn(num)
+}
+
+console.log("isEven ",numberFact(59,isEven)) // false
+console.log("IsOdd ",numberFact(59,isOdd)) // true
+console.log("IsPrime ",numberFact(59,isPrime)) // true
+
+
+
+
 
 
 
