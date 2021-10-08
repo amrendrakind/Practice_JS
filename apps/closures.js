@@ -102,3 +102,15 @@ function outer(a){
   console.log(displayFirstArguments(1,2,3))
   console.log(displayFirstArguments(true))
   console.log(displayFirstArguments())
+  /// add using arguments
+  function add(){
+    let total=0
+    for(let i =0;i<arguments.length;i++){
+        total+=arguments[i]
+    }
+    return total
+  }
+  console.log(add(1,2,3,4,5,6))
+  console.log(add(-1,1,2,-3,-4))
+  console.log(add())
+  
