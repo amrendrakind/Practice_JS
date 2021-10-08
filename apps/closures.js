@@ -43,6 +43,7 @@ function outer(a){
       }
     }
   }
+  
   console.log("\nInstructor Role\n")
   let firstClass=createInstructors()
   console.log(firstClass)
@@ -53,4 +54,37 @@ function outer(a){
   secondClass.addInstructors("Ashley")
   console.log(secondClass.showInstructors())
   console.log(createInstructors().showInstructors())
-  
+  //----Refactor as IIFEs
+  let instructorModule = (function createInstructors(){
+    let instructors = ["Elie", "Matt", "Tim"];
+    return {
+        showInstructors: function displayAllInstructors(){
+            return instructors;
+        },
+        addInstructor: function addNewInstructor(instructor){
+            instructors.push(instructor)
+            return instructors;
+        }
+    }
+  })();
+  console.log(instructorModule.showInstructors())
+  instructorModule.addInstructor("Lonie")
+  console.log(instructorModule.showInstructors())
+  // Refactored Further
+  let instructorModuleRefactored = (function createInstructors(){
+    let instructors = ["Elie", "Matt", "Tim"];
+    function displayAllInstructors(){
+        return instructors;
+    }
+    function addNewInstructor(instructor){
+        instructors.push(instructor);
+        return instructors;
+    }
+    return {
+        showInstructors: displayAllInstructors,
+        addInstructor: addNewInstructor
+    }
+  })();
+  console.log(instructorModuleRefactored.showInstructors())
+  instructorModuleRefactored.addInstructor("Shally")
+  console.log(instructorModuleRefactored.showInstructors())
