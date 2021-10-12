@@ -67,7 +67,7 @@ console.log("isEven ",numberFact(59,isEven)) // false
 console.log("IsOdd ",numberFact(59,isOdd)) // true
 console.log("IsPrime ",numberFact(59,isPrime)) // true
 
-
+//---
 
 
 
