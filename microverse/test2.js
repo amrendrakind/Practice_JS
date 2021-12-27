@@ -12,9 +12,9 @@ function countingValleys(steps, path) {
                 isValley=true;
                 countValley++;
             }
-        else if(currentSeaLevel >= 0 && isValley){
-                isValley=false;
-            }
+            else if(currentSeaLevel >= 0 && isValley){
+            isValley=false;
+        }
         }
         return countValley      
     }
