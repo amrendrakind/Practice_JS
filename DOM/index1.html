@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
+    <script>
+        // Putting JavaScript it here, or include an external file.
+        let sectionContainer = document.getElementById("container")
+        let containerQuery = document.querySelector("#container")
+        let classSecondId = document.getElementsByClassName("second")
+        let classSecond = document.querySelectorAll(".second")
+        let OlQuery = document.querySelector("ol.third")
+        //containerQuery.innerText="Hello" 
+        let divFooter = document.querySelector(".footer")
+        divFooter.classList.add("main")
+        //divFooter.className += "main"
+        let footer = document.querySelector(".footer")
+        footer.classList.remove("main")
+        let newLi = document.createElement("li")
+        newLi.innerText = "four"
+        let ulList = document.querySelector("ul")
+        ulList.appendChild(newLi)
+        let liOl = document.querySelectorAll("ol li")
+        for(let i =0; i<liOl.length;i++){
+            liOl[i].style.backgroundColor= "green"
+        }
+        let footerNew = document.querySelector(".footer")
+        footerNew.remove()
+        
+    </script>
+</body>
+</html>
