@@ -31,12 +31,37 @@
             secondDiv.style["background-color"]="purple"
         
         let newDiv = document.createElement("div");
+        secondDiv.append(newDiv)
         let container = document.getElementById("container");
         container.childNodes
-        newDiv.innerText= container.childNodes.length
+        newDiv.textContent= container.childNodes.length + " "+container.children.length
+        // console.log(newDiv)
         container.children
-        document.textContent(container.children.length)
+        // console.log(container.children.length)
+
+        let linkToBeRemoved = document.querySelector("a")
+        container= document.getElementById("container")
+        container.removeChild(linkToBeRemoved) 
+
+
         }
+
+        let button = document.createElement("button");
+        button.innerText = "I am a button created with JavaScript!";
+        let container = document.getElementById("container");
+        container.appendChild(button)
+        button.onclick=MyClick
+
+        function MyClick(){ 
+            console.log("You clicked me. I am painting Blue")
+            let divs = document.querySelectorAll("div")
+            for(let i = 0; i<divs.length;i++){
+                divs[i].style.backgroundColor="blue"
+            }
+        }
+        
+
+
     </script>
 </body>
 </html>
