@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <!-- make sure for now that your script tag is in the head -->
-    <title>Document</title>
+    <title>DOM Documents</title>
 </head>
 <body id= "container">
     <div class="hello">
         Hello World
     </div>
+    <button onclick="changeMeFirst()">Click me to Change first Div!</button>
     <div class="hello">
         Hello Everyone!
     </div>
-    <a href="#">This link goes nowhere!</a>
-    <button>Click me!</button>
+
+    <button onclick="changeMeSecond()">Click me to Change second Div!</button>
+    <a href="#">This link goes nowhere!</a> <br>
     <script>
         // you can put your JavaScript in here, or include an external file.
+        function changeMeFirst(){
+            let firstDiv = document.getElementsByTagName("div")[0];
+            firstDiv.innerText="Hello World got changed"
+            firstDiv.style.color="red"
+            firstDiv.style.backgroundColor="teal"
+        }
+        function changeMeSecond(){
+            let secondDiv = document.getElementsByTagName("div")[1];
+            secondDiv.innerText="Hello Everyone! got changed too"
+            secondDiv.style.color="green"
+            secondDiv.style["background-color"]="purple"
+        
+        let newDiv = document.createElement("div");
+        let container = document.getElementById("container");
+        container.childNodes
+        newDiv.innerText= container.childNodes.length
+        container.children
+        document.textContent(container.children.length)
+        }
     </script>
 </body>
 </html>
