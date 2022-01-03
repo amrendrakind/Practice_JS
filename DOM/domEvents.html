@@ -8,5 +8,23 @@
     <button class="first_button" onclick="firstClick()">Click me first!</button>
     <button class="second_button" >Click me second!</button>
     <button class="third_button">Click me third!</button>
+    
+    
+    <script>
+        function firstClick(){
+            alert("you clicked the first button!");
+        }
+        let secondButton = document.querySelector('.second_button');
+        secondButton.onclick = function(){  
+            alert("you clicked the second button!");
+        }
+        let thirdButton = document.querySelector('.third_button')
+        thirdButton.addEventListener("click", function(){
+            alert("you clicked on the third button!!!")
+        })
+    </script>
+
 </body>
+
 </html>
+
