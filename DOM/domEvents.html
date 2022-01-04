@@ -16,11 +16,18 @@
         // buttons.addEventlistener("click",function(){
         //     alert("You just clicked button")
         // })
-
         for(let i=0;i<buttons.length;i++){
-            buttons[i].addEventListener("click", function(){
-                alert("You just clicked button")
-            })
+            buttons[i].addEventListener("click", alertData)
+        }
+
+        // alert("I am alert!")
+        //Removing event listener
+        for(let i = 0; i<buttons.length;i++){
+            buttons[i].removeEventListener("click",alertData)
+        }
+        //Alert Message display
+        function alertData(){
+            alert("you just clicked button !!")
         }
         // function firstClick(){
         //     alert("you clicked the first button!");
