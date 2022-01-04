@@ -13,14 +13,11 @@
     <script>
 
         let buttons = document.getElementsByTagName("button");
-        // buttons.addEventlistener("click",function(){
-        //     alert("You just clicked button")
-        // })
+
         for(let i=0;i<buttons.length;i++){
             buttons[i].addEventListener("click", alertData)
         }
 
-        // alert("I am alert!")
         //Removing event listener
         for(let i = 0; i<buttons.length;i++){
             buttons[i].removeEventListener("click",alertData)
@@ -29,18 +26,6 @@
         function alertData(){
             alert("you just clicked button !!")
         }
-        // function firstClick(){
-        //     alert("you clicked the first button!");
-        // }
-        // let secondButton = document.querySelector('.second_button');
-        // secondButton.onclick = function(){  
-        //     alert("you clicked the second button!");
-        // }
-        // let thirdButton = document.querySelector('.third_button')
-        // thirdButton.addEventListener("click", function(){
-        //     alert("you clicked on the third button!!!")
-        // })
-
     </script>
 
 </body>
