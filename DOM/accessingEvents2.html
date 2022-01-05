@@ -13,12 +13,19 @@
         <li>Baking Soda</li>
     </ul>
 </body>
+
 <script>
-    let listItem = document.querySelectorAll("li");
+    // let ul= document.querySelector("ul")
+    // ul.addEventListener("click", function(event){
+    //     alert("You just clicked on " +event.target.innerText)
+    // })
+
+    let listItem = document.getElementsByTagName("li");
     for(let i=0;i<listItem.length;i++){
         listItem[i].addEventListener("click", function(event){
             alert("You just clicked on "+event.target.innerText)
         })
     }
+
 </script>
 </html>
