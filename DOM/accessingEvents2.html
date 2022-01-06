@@ -12,6 +12,7 @@
         <li>Flour</li>
         <li>Baking Soda</li>
     </ul>
+    <div>Double click me</div>
 </body>
 
 <script>
@@ -20,12 +21,36 @@
     //     alert("You just clicked on " +event.target.innerText)
     // })
 
+    let instructors = ["Elie", "Matt", "Tim"];
+    localStorage.setItem("instructors", JSON.stringify(instructors));
+
+    localStorage.setItem("favoriteNumber", "09")
+    localStorage.setItem("isTrue", true)
+
     let listItem = document.getElementsByTagName("li");
     for(let i=0;i<listItem.length;i++){
         listItem[i].addEventListener("click", function(event){
+            event.preventDefault()
             alert("You just clicked on "+event.target.innerText)
         })
     }
+
+    let divClick = document.getElementsByTagName("div");
+
+    for(let i=0;i<divClick.length;i++){
+        divClick[i].addEventListener("dblclick", function(event){
+            event.preventDefault()
+            alert("I am double clicked "+JSON.parse(localStorage.getItem("instructors")))
+        })
+    }
+
+    // divClick.addEventListener("lclick", function(){
+    //     event.preventDefault()
+    //     alert("I am double clicked")
+    // })
+    // divClick.addEventListener("dblclick", function(event){
+    //         alert(localStorage.getItem("instructor"));
+    //     })
 
 </script>
 </html>
