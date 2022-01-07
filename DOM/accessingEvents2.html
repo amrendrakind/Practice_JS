@@ -16,10 +16,7 @@
 </body>
 
 <script>
-    // let ul= document.querySelector("ul")
-    // ul.addEventListener("click", function(event){
-    //     alert("You just clicked on " +event.target.innerText)
-    // })
+
 
     let instructors = ["Elie", "Matt", "Tim"];
     localStorage.setItem("instructors", JSON.stringify(instructors));
@@ -43,14 +40,6 @@
             alert("I am double clicked "+JSON.parse(localStorage.getItem("instructors")))
         })
     }
-
-    // divClick.addEventListener("lclick", function(){
-    //     event.preventDefault()
-    //     alert("I am double clicked")
-    // })
-    // divClick.addEventListener("dblclick", function(event){
-    //         alert(localStorage.getItem("instructor"));
-    //     })
 
 </script>
 </html>
