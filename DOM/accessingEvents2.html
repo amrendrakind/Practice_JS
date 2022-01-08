@@ -24,7 +24,7 @@
     localStorage.setItem("favoriteNumber", "09")
     localStorage.setItem("isTrue", true)
 
-    let listItem = document.getElementsByTagName("li");
+    let listItem = document.getElementsByTagName("li"); 
     for(let i=0;i<listItem.length;i++){
         listItem[i].addEventListener("click", function(event){
             event.preventDefault()
@@ -32,7 +32,7 @@
         })
     }
 
-    let divClick = document.getElementsByTagName("div");
+    let divClick = document.getElementsByTagName("div"); // In case of getElementsByTagName we need to loop through the tagVariable.
 
     for(let i=0;i<divClick.length;i++){
         divClick[i].addEventListener("dblclick", function(event){
