@@ -53,4 +53,10 @@ let doubleval = arr.map(function(val){ return val*2})
 let tripple = arr.map(function(val){ return val*3 })
 console.log(doubleval)
 console.log(tripple)
+/// Filter
+
+let valueGreaterThanTwo = arr.filter(function(val){
+    return val>2
+})
+console.log(valueGreaterThanTwo)
 
