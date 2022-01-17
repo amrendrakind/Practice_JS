@@ -30,6 +30,7 @@ function filterLetters(arr, key){
         temp.push(val)
     })
     return temp.length
+    
 }
 
 console.log(filterLetters(["a","a","b","c","A"], "a")); // 3
