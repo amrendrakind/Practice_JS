@@ -35,3 +35,14 @@ function filterLetters(arr, key){
 console.log(filterLetters(["a","a","b","c","A"], "a")); // 3
 console.log(filterLetters(["a","a","b","c","A"], "z")); // 0
 console.log(filterLetters(["a","a","b","c","A"], "B")); // 1
+
+//Write a function called filterKey which accepts two parameters, an array of objects, and the name of a key and returns an array with only those objects which have truthy values for that key:
+
+function filterKey(arr, key){
+    arr.filter(function(val){
+        if(val[key]== true)
+        console.log(val)
+    })
+}
+
+filterKey([{name: "Elie", isInstructor:true, isHilarious: false},{name: "Tim", isInstructor:true, isHilarious: true},{name: "Matt", isInstructor:true}], "isHilarious")
